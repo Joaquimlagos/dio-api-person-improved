@@ -1,5 +1,6 @@
 package com.digitalinnovation.personapiimproved.dto.request;
 
+import com.digitalinnovation.personapiimproved.entities.Address;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -38,4 +39,8 @@ public class PersonDTO {
   @Valid
   @NotEmpty
   private List<PhoneDTO> phones;
+
+  @Valid
+  @NotNull
+  private AddressDTO address;
 }
